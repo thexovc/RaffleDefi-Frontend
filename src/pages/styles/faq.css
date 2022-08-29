@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.faq{
+    font-family: 'Poppins', sans-serif;
+    background-color: #121341;
+}
+
+
+.container__fluid{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container__fluid h2{
+    color: white;
+    position: relative;
+    width: 23rem;
+}
+
+.container__fluid h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: white;
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid #39F4F9;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+    background-color: #39F4F9;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plus, .minus{
+    color: #121341;
+   font-size: 50px;
+}
+.plus1 {
+    display: none;
+}
+
+.plus{
+    display: flex;
+    align-self: center;
+}
+
+.minus{
+    display: none;
+}
+
+.minus1{
+    display: flex;
+    align-self: center;
+}
+
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0 ;
+    font-weight: normal;
+    color: #39F4F9;
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #39F4F9;
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+
+.panel1 {
+    padding: 0 15px;
+    border-left: 1px solid #39F4F9;
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 300px;
+    transition: all .5s ease-in;
+}
+
+
+@media screen and (max-width: 414px){
+    .container__fluid{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    
+    .container__fluid h2{
+        color: white;
+        position: relative;
+        width: 23rem;
+    }
+    
+    .container__fluid h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+        width: 47px;
+        height: 2px;
+        background-color: white;
+    }
+    
+    .accordion {
+        width: 100%;
+        padding: 0 5px;
+        border: 2px solid #39F4F9;
+        cursor: pointer;
+        border-radius: 50px;
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+    }
+    
+    .accordion .icon {
+        margin: 0 10px 0 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        float: left;
+        transition: all .5s ease-in;
+        background-color: #39F4F9;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .accordion h5 {
+        font-size: 16px;
+        margin: 0;
+        padding: 3px 0 0 0 ;
+        font-weight: normal;
+        color: #39F4F9;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .faq, .faq::before, .faq::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+.faq__section{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: #121341;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq__heading{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.faq__container{
+    width: 50%;
+    max-width: 80rem;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+   
+}
+
+.accordion__item {
+    background-color: #1F204E;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
+
+.accordion__link{
+    font-size: 1.6rem;
+    color: #39F4F9;
+    text-decoration: none;
+    background-color: #1F204E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion__link div {
+    color: #39F4F9;
+    padding: .5rem;
+    
+}
+
+.accordion__link .ion-md-remove {
+    display: none;
+}
+
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #121341;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: '';
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #39F4F9;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.answer p {
+    font-size: 1.4rem;
+    color: white;
+padding: 2rem;
+}
+
+.accordion__item:target .answer{
+    max-height: 20rem;
+}
+
+.accordion__item:target .accordion__link .ion-md-add{
+    display: none;
+}
+
+.accordion__item:target .accordion__link .ion-md-remove{
+    display: block;
+} */

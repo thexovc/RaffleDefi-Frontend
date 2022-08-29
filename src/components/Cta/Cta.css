@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.cta{
+    background: #1F204E;
+    padding: 70px;
+    margin-top: 100px;
+}
+
+.cta__content{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.cta__para{
+    font-size: 25px;
+}
+
+
+.ctabutton__div{
+   
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    margin-top: 20px;
+    
+  }
+  
+
+
+.cta__button {
+    
+
+    color: black;
+    padding: 10px 60px;
+    
+    border-radius: 15px;
+    background: #39F4F9;
+    
+    
+  }

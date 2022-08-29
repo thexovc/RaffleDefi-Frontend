@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.table__container {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10%;
+    margin: 40px auto 0;
+  }
+  
+
+.table2__container {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10%;
+    margin: 40px auto 0;
+  }
+  
+  .table2 {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+  }
+  
+  .table2 thead {
+    background-color: #39f4f9;
+    color: black;
+    border: 1px solid #39f4f9;
+  }
+
+
+  .gen {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .table2 thead tr th {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: black;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+  }
+  
+  .table2 tbody tr td {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: white;
+    background-color: #1f204e;
+    padding: 15px 10px;
+    text-align: center;
+  }
+  
+  .details__description{
+    color: white;
+    
+  }
+
+  .description__h1{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .description__p{
+    color: white;
+  }
+  
+  
+ 
+  @media screen and (max-width: 945px) {
+    .table2 thead {
+      display: none;
+    }
+  
+    .table2,
+    .table2 tbody,
+    .table2 tr,
+    .table2 td {
+      display: block;
+      width: 100%;
+    }
+  
+    .table2 tr {
+      margin-bottom: 15px;
+    }
+  
+    .table2 tbody tr td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .table2 td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: left;
+    }
+  }

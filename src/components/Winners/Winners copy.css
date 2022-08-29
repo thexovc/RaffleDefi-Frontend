@@ -1,0 +1,334 @@
+.winner {
+    color: white;
+    padding: 100px;
+}
+
+
+.winner__h1 {
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.winner__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding: auto auto;
+
+}
+
+
+.winner__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #39F4F9;
+    background: #1F204E;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 10px;
+
+}
+
+.winner__chain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #39F4F9;
+    background: #39F4F9;
+    align-self: center;
+    margin: 10px;
+}
+
+.winner__coin {
+    align-self: center;
+    font-size: 30px;
+}
+
+
+.winner__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.winner__address {
+    font-size: 16px;
+    text-align: left;
+}
+
+.winner__time {
+    color: gray;
+    font-size: 14px;
+    text-align: left;
+}
+
+.winner__amount {
+    color: #39F4F9;
+    font-size: 22px;
+    text-align: left;
+}
+
+
+
+/* responsive css */
+
+
+
+@media screen and (min-width: 1441px) {
+    .winner {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+    .winner__h1 {
+        font-size: 40px;
+        text-align: left;
+        padding-bottom: 50px;
+    }
+
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+
+    .winner__card {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        padding: 20px;
+        gap: 30px;
+        border-radius: 10px;
+
+    }
+
+    .winner__chain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #39F4F9;
+        background: #39F4F9;
+        align-self: center;
+        margin: 10px;
+    }
+
+    .winner__coin {
+        align-self: center;
+        font-size: 30px;
+    }
+
+
+    .winner__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .winner__address {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .winner__time {
+        color: gray;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .winner__amount {
+        color: #39F4F9;
+        font-size: 22px;
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (max-width: 1440px) {
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+}
+
+
+@media screen and (max-width: 1184px) {
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+
+    .winner__card {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        padding: 20px 35px;
+        gap: 30px;
+        border-radius: 10px;
+
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+
+    .winner__card {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        padding: 25px 50px;
+        gap: 30px;
+        border-radius: 10px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+
+    .winner__card {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        padding: 35px 80px;
+        gap: 80px;
+        border-radius: 10px;
+
+    }
+
+    .winner__chain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #39F4F9;
+        background: #39F4F9;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .winner__coin {
+        align-self: center;
+        font-size: 50px;
+    }
+
+
+    .winner__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .winner__address {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .winner__time {
+        color: gray;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .winner__amount {
+        color: #39F4F9;
+        font-size: 22px;
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .winner__h1 {
+        font-size: 30px;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+
+    .winner__cards {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+
+
+    .winner__card {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        padding: 35px 60px;
+        gap: 30px;
+        border-radius: 10px;
+
+    }
+
+}

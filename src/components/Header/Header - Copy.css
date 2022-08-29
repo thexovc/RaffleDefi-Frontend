@@ -1,0 +1,154 @@
+.header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #1F204E;
+}
+
+
+.navbar > .nav__logo{
+    font-weight: 700;
+    font-size: 21px;
+    margin: 15px;
+    color: white;
+}
+
+
+.navbar > .nav__items {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    gap: 60px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.navbar > .nav__items:hover {
+
+    opacity: 1;
+}
+
+.navbar > .nav__items::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    
+    transition: all .45;
+
+}
+
+.navbar > .nav__items:hover::before {
+    width: 100%;
+
+}
+
+.navbar > .nav__toggle {
+    display: none;
+
+}
+
+.active{
+    color: #39F4F9;
+}
+
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 30px;
+        align-items: center;
+        background: #1F204E;
+    }
+    
+
+    .navbar > .nav__items{
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        background: #1F204E;
+        left: -8px;
+        width: 100%;
+        gap: 20px;
+        height: 15%;
+        transform: translateX(-100%);
+        transform: all .45s;
+    }
+
+    .navbar > .nav__items.open{
+        transform: translateX(0);
+    }
+    .navbar > .nav__toggle{
+        display: flex;
+        width: 50%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    
+    }
+
+    .nav__toggle > .bar{
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background: white;
+    }
+
+    .nav__toggle > .bar::before,
+    .nav__toggle > .bar::after
+    {
+       content: '';
+       position: absolute;
+       height: 2px;
+       background: white;
+       border-radius: 2px;
+       transition: all .45s ease-in-out;
+    }
+    .nav__toggle > .bar::before{
+        width: 25px;
+        transform: translateY(-8px);
+        right: 0px;
+    }
+
+    .nav__toggle > .bar::after{
+        width: 32px;
+        transform: translateY(8px);
+    }
+
+
+    .nav__toggle.open > .bar{
+        transform: translateX(-40px);
+        background: transparent;
+    }
+
+    .nav__toggle.open > .bar::before{
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+       
+    }
+
+    .nav__toggle.open > .bar::after{
+        
+        transform: rotate(-45deg) translate(26px, 26px);
+       
+    }
+
+
+}
